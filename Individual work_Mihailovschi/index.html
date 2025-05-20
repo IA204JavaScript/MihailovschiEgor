@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Landing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="/Individual work_Mihailovschi/Images/Images/icons/ico.png" alt="Логотип" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a class="active" href="#!">HOME</a></li>
+                    <li><a href="#!">PAGES</a></li>
+                    <li><a href="#!">OUR OFFER</a></li>
+                    <li><a href="#!">PRICING</a></li>
+                    <li><a href="#!">SHOP</a></li>
+                    <li><a href="#registration">REGISTRATION</a></li>
+                </ul>
+            </nav>
+            <a href="#!" class="btn">Order now</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__text">
+                    <h4 class="welcome__subtitle">FAST FOOD BURGERS</h4>
+                    <h1 class="welcome__title">The fastest food, for instant hunger.</h1>
+                    <p class="welcome__desc">
+                        Some food has looked so awful that it’s looked like something that the dog’s brought home, yet after one 
+                        mouthful I’ve been left eating my thoughts, my words & my food and gone back for seconds.
+                    </p>
+                    <a href="#!" class="btn">Order now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="food-list">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="btn filter-btn active" data-category="all">All</button>
+                    <button class="btn filter-btn" data-category="burgers">Burgers</button>
+                    <button class="btn filter-btn" data-category="tacos">Tacos</button>
+                    <button class="btn filter-btn" data-category="paella">Paella</button>
+                    <button class="btn sort-btn">Sort by Price</button>
+                    <input type="text" id="search-input" placeholder="Search by name" class="search-input">
+                </div>
+                <div class="food-list__container free"></div>
+            </div>
+        </section>
+
+        <section class="registration" id="registration">
+            <div class="container">
+                <h2>Register Now</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Order Details</h2>
+            <div class="modal-body"></div>
+            <button class="btn confirm-order">Confirm Order</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><img src="./Images/Images/icons8-facebook-logo-50.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="./Images/Images/icons8-twitter-logo-50.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./Images/Images/icons8-instagram-logo-50.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
